@@ -7,7 +7,7 @@ import Char
 rotate :: Int -> Char -> Char
 rotate n c 
     | isLower c     = chr (((ord c - 97) + n) `mod` 26 + 97)
-    | isUpper c     = rotate n (toUpper c)
+    | isUpper c     = rotate n (toLower c)
     | otherwise     = c 
 
 encrypt :: Int -> [Char] -> [Char]
