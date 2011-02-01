@@ -1,6 +1,6 @@
 
 
-module ProblemSet10 where
+module Lists where
 
 --Find the last element of a list.
 myLast :: [a] -> a
@@ -63,5 +63,5 @@ pack (x:xs) = (x : takeWhile (==x) xs) : pack (dropWhile (==x) xs)
 encode :: (Eq a) => [a] -> [(a, Int)]
 encode [] = []
 encode xs = map (\x -> (head x, length x)) (pack xs)
-
+    
 

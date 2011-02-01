@@ -1,6 +1,6 @@
 
-
-import ProblemSet10
+module Lists2 where
+import Lists
 
 --Modify the result of problem 10 in such a way that if an element 
 --has no duplicates it is simply copied into the result list. 

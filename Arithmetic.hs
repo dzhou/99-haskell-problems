@@ -1,6 +1,7 @@
 
-module ProblemSet40 where
-import ProblemSet10
+
+module Arithmetic where
+import Lists
 
 --(**) Determine whether a given integer number is prime.
 isPrime :: (Integral a) => a -> Bool
@@ -16,7 +17,7 @@ myGCD :: Integral a => a -> a -> a
 myGCD a b 
     | b == 0        = a
     | otherwise     = myGCD b (mod a b)
-    
+
 --(*) Determine whether two positive integer numbers are coprime. 
 --Two numbers are coprime if their greatest common divisor equals 1.
 coprime :: (Integral a) => a -> a -> Bool
